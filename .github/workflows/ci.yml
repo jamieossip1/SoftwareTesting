@@ -37,7 +37,7 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Build and Run Integration Tests with Maven
-        run: mvn -Dtest=com.example.ilpcoursework.IntegrationTests test --file ILP-Coursework-main/pom.xml
+        run: mvn test --file ILP-Coursework-main/pom.xml
 
   # Build package (Creates JAR)
   build_package:
