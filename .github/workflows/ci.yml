@@ -21,7 +21,7 @@ jobs:
           distribution: 'temurin'
           cache: maven
       - name: Clean Build with Maven
-        run: mvn clean --file pom.xml
+        run: mvn clean --file ILP-Coursework-main/pom.xml
 
   # Building -> Testing stage (Runs test files in the repo)
   build_test:
