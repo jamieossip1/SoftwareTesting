@@ -44,42 +44,6 @@
 
     <build>
         <plugins>
-            <!-- Surefire Plugin for Unit Tests -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.0.0-M5</version>
-                <configuration>
-                    <excludes>
-                        <!-- Exclude all unit tests (e.g., *Test.java) -->
-                        <exclude>*Test*.java</exclude>
-                    </excludes>
-                </configuration>
-            </plugin>
-
-            <!-- Failsafe Plugin for Integration Tests -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-failsafe-plugin</artifactId>
-                <version>3.0.0-M5</version>
-                <executions>
-                    <execution>
-                        <goals>
-                            <goal>integration-test</goal>
-                            <goal>verify</goal>
-                        </goals>
-                        <phase>integration-test</phase>
-                    </execution>
-                </executions>
-                <configuration>
-                    <includes>
-                        <!-- Include the integration tests (e.g., IntegrationTests.java) -->
-                        <include>**/IntegrationTests.java</include>
-                    </includes>
-                </configuration>
-            </plugin>
-
-            <!-- Spring Boot Maven Plugin -->
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
@@ -88,3 +52,4 @@
     </build>
 
 </project>
+
